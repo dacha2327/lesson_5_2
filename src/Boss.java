@@ -1,12 +1,19 @@
 public class Boss {
-    private int bossHealth = 650;
-    private int bossDamage = 50;
-    private String BossDefence = "Physical.";
+
+    private int bossHealth;
+    private int bossDamage;
+    private String BossDefence;
+    protected Boss(int bossDamage, int bossHealth , String BossDefence){
+        this.bossDamage = bossDamage;
+        this.BossDefence = BossDefence;
+        this.bossHealth = bossHealth;
+
+    }
+
     public void setBossHealth(int bossHealth){
 
         this.bossHealth = bossHealth;
-    }
-    public int getBossHealth(){return this.bossHealth;}
+    }public int getBossHealth(){return  this.bossHealth;}
 
     public void setBossDamage(int bossDamage){
         this.bossDamage = bossDamage;}
